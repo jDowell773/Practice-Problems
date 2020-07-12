@@ -46,3 +46,49 @@ books = [
 ]
 
 p books[2]["author"]
+
+
+# 6
+
+states = { "Illinois" => "Springfield", "California" => "Sacremento", "New York" => "Albany" }
+states["Texas"] = "Austin"
+
+p states 
+
+
+# 7
+
+laptop = { "brand" => "Apple", "model" => "Macbook Air", "year" => "2020" }
+
+p laptop["brand"]
+p laptop["model"]
+p laptop["year"]
+
+
+# 8
+
+laptops = [
+  { "brand" => "Apple", "model" => "Macbook" },
+  { "brand" => "Apple", "model" => "Macbook Air" },
+  { "brand" => "Apple", "model" => "Macbook Pro" }
+]
+
+p laptops[1]["model"]
+
+
+# 9
+
+words = { "happy" => "the state of being cheerful", "sad" => "the state of feeling down; opposite of happy" }
+words["content"] = "the state of being ok; not happy or sad"
+
+p words 
+
+
+# 10
+
+shirt = { "brand" => "Polo", "color" => "black", "size" => "small" }
+
+p shirt["brand"]
+p shirt["color"]
+p shirt["size"]
+

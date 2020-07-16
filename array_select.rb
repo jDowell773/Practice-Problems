@@ -78,3 +78,83 @@ while index < strings.length
 end
 
 p new_strings
+
+
+# 6
+
+items = [{name: "apple", price: 1}, {name: "pineapple", price: 4}, {name: "banana", price: 2}]
+less_than_six = []
+index = 0
+
+while index < items.length
+  if items[index][:name].length < 6
+    less_than_six << items[index]
+  end
+  index += 1
+end
+
+p less_than_six
+
+
+# 7
+
+numbers = [1, 2, 3, 20, 30, 40]
+new_numbers = []
+index = 0 
+
+while index < numbers.length
+  if numbers[index] < 10
+    new_numbers << numbers[index]
+  end
+  index += 1
+end
+
+p new_numbers
+
+
+# 8
+
+strings = ["aye", "bee", "cee"]
+new_strings = []
+index = 0
+
+while index < strings.length
+  if strings[index][0] != "b"
+    new_strings << strings[index]
+  end
+  index += 1
+end
+
+p new_strings
+
+
+# 9
+
+items = [{name: "couch", price: 600}, {name: "lamp", price: 9}, {name: "desk", price: 100}]
+less_than_ten = []
+index = 0
+
+while index < items.length
+  if items[index][:price] < 10
+    less_than_ten << items[index]
+  end
+  index += 1
+end
+
+p less_than_ten
+
+
+# 10
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_numbers = []
+index = 0
+
+while index < numbers.length
+  if numbers[index] % 2 == 1
+    odd_numbers << numbers[index]
+  end
+  index += 1
+end
+
+p odd_numbers

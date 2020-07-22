@@ -212,3 +212,4 @@ while index1 < nested_words.length
 end
 
 p combined_word
+

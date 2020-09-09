@@ -59,23 +59,59 @@ p string_length
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 #  For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
+hashes = [
+  {name: "Alice", age: 27},
+   {name: "Blane", age: 16}
+  ]
+values = hashes.map do |hash|
+  hash[:age]
+end
+
+p values
 
 
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #  For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
+numbers = [1, 2, 3]
+div_by_two = numbers.map do |number|
+  number / 2.0
+end
+
+p div_by_two
 
 
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #  For example, ["hello", "goodbye"] becomes ["h", "g"].
 
+strings = ["hello", "goodbye"]
+first_letter = strings.map do |string|
+  string[0]
+end
+
+p first_letter
 
 
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #  For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
+hashes = [
+  {name: "Alice", age: 27},
+   {name: "Blane", age: 16}
+  ]
+values = hashes.map do |hash|
+  hash[:age] * 2
+end
+
+p values
 
 
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #  For example, [1, 2, 3] becomes ["1", "2", "3"].
 
+numbers = [1, 2, 3]
+num_to_string = numbers.map do |number|
+  number.to_s 
+end
+
+p num_to_string
